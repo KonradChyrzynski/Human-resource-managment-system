@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b6b7ff91f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <div class="row">
+                <div class="cols">
+                    <form class="card card-body card-grid">
+                        <label for="imie">
+                            <p>Imie</p>
+                            <input class="form-control form-control-add" type="text" id="imie" required>
+                        </label>
+                        <label for="nazwisko">
+                            <p>Nazwisko</p>
+                            <input class="form-control form-control-add" type="text" id="nazwisko" required>
+                        </label>
+                        <label for="dzial">
+                            <p>Dział</p>
+                            <input class="form-control form-control-add" type="text" id="dzial" required>
+                        </label>
+                        <label for="wynagrodzenieKwota">
+                            <p>Kwota wynagrodzenia</p>
+                            <input class="form-control form-control-add" type="number" id="wynagrodzenieKwota" required>
+                        </label>
+                        <label for="wynagrodzenieWaluta">
+                            <p>PLN <input class="form-control-add" type="radio" id="wynagrodzenieWaluta" value="PLN" checked></p>
+                        </label>
+                        <button type="submit" class="btn btn-success">Dodaj pracownika</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card card-body " >
+                        <p>Wyszukaj</p>
+                        <div class="relative">
+                            <input class="form-control form-control-one" type="text">
+                            <i class="fas fa-search "></i>
+                        </div>
+                        <select class="form-select department-select" aria-label="Default select example">
+                            <option>Wszystkie działy</option>
+                        </select>
+                        <form class="interval">
+                            <label for="minValue">
+                                <p>Od</p>
+                                <input class="form-control form-control-add" type="number" id="minValue" required>
+                            </label>
+                            <label for="maxValue">
+                                <p>Do</p>
+                                <input class="form-control form-control-add" type="number" id="maxValue" required>
+                            </label>
+                        </form>
+                        <button type="submit" class="btn btn-success search-btn">Wyszukaj</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="table-row">
+            <table class="table table-dark table-striped table-one">
+                <tr  class="table1-top">
+                    <th class="filter-table"  data-colname="imie" data-order="desc">Imię &#9650</th>
+                    <th class="filter-table" data-colname="nazwisko" data-order="desc">Nazwisko &#9650</th>
+                    <th class="filter-table" data-colname="dzial" data-order="desc">Dział &#9650</th>
+                    <th class="filter-table" data-colname="wynagrodzenieKwota" data-order="desc">Kowota wynagrodzenia &#9650</th>
+                </tr>
+                <tbody id="myTable1">
+                </tbody>
+            </table>
+            <table class="table table-dark table-striped">
+                <tr>
+                <tbody id="myTable2">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+</html>

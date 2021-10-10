@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 1146px;
+  min-height: 100vh;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .table-row {
+  margin-left: 1em;
+}
+
+main .row, main table {
+  margin-top: 2em;
+}
+
+main input:not(input[type="radio"]) {
+  width: 100%;
+}
+
+main table {
+  width: 100%;
+}
+
+main #relative-td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #relative-td .fa-user-times {
+  margin-right: 10%;
+}
+
+main #relative-td .fa-user-times:hover {
+  color: red;
+}
+
+main .relative {
+  position: relative;
+}
+
+main .relative .fa-search {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+main select {
+  margin-top: 1em;
+}
+
+main .interval {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 0 1em 0;
+}
+
+main .interval #minValue, main .interval #maxValue {
+  width: 100px;
+}
+/*# sourceMappingURL=style.css.map */
