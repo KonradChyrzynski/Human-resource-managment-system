@@ -1,4 +1,4 @@
-# Human-resource-menagment-system
+# Human-resource-managment-system
 
 hosted: https://konradchyrzynski.github.io/Human-resource-menagment-system/
 
